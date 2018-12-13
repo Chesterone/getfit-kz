@@ -15,11 +15,10 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'RecipesController@index');
 
-Route::get('/users/{id}', function ($id) {
-    return 'Welcome, '.$id;
-});
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+Route::resource('recipes', 'RecipesController');

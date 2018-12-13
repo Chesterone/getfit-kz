@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Recipe;
 
 class RecipesController extends Controller
 {
@@ -14,6 +15,8 @@ class RecipesController extends Controller
     public function index()
     {
         //
+        $recipes = Recipe::orderBy('created_at', 'desc')->paginate(10);
+        return view('recipes.index')->with('recipes', $recipes);
     }
 
     /**
@@ -24,6 +27,7 @@ class RecipesController extends Controller
     public function create()
     {
         //
+        return view('recipes.create');
     }
 
     /**
@@ -35,6 +39,17 @@ class RecipesController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request, [
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+
+        $recipe = new Recipe;
+        $recipe->title = $request->title;
+        $recipe->body = $request->body;
+        $recipe->save();
+
+        return redirect('/recipes')->with('success', 'Новый рецепт успешно добавлен');
     }
 
     /**
@@ -46,6 +61,11 @@ class RecipesController extends Controller
     public function show($id)
     {
         //
+        $recipe = Recipe::find($id);
+        if (!$recipe) {
+            return redirect('/recipes');
+        }
+        return view('recipes.show')->with('recipe', $recipe);
     }
 
     /**
@@ -57,6 +77,11 @@ class RecipesController extends Controller
     public function edit($id)
     {
         //
+        $recipe = Recipe::find($id);
+        if (!$recipe) {
+            return redirect('/recipes');
+        }
+        return view('recipes.edit')->with('recipe', $recipe);
     }
 
     /**
@@ -69,6 +94,20 @@ class RecipesController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $this->validate($request, [
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+
+        $recipe = Recipe::find($id);
+        if (!$recipe) {
+            return redirect('/recipes');
+        }
+        $recipe->title = $request->title;
+        $recipe->body = $request->body;
+        $recipe->save();
+
+        return redirect('/recipes')->with('success', 'Рецепт успешно обновлен');
     }
 
     /**
@@ -79,6 +118,11 @@ class RecipesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $recipe = Recipe::find($id);
+        if (!$recipe) {
+            return redirect('/recipes');
+        }
+        $recipe->delete();
+        return redirect('/recipes')->with('success', 'Рецепт успешно удален'); 
     }
 }
