@@ -14,15 +14,9 @@
                     {!!$recipe->body!!}
                 </div>
                 <div class="card-body">
-                    <small>Дата создания {{$recipe->created_at}}</small>
+                    <small>Создан {{$recipe->created_at}} пользователем {{$recipe->user->name}}</small>
                 </div>
         </div>
-        <hr />
-        <a href="/recipes/{{$recipe->id}}/edit" class="btn btn-primary">Редактировать</a>
-        {!!Form::open(['action' => ['RecipesController@destroy', $recipe->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
-            {{Form::hidden('_method', 'DELETE')}}
-            {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
-        {!!Form::close()!!}
 </div>
 </div>
 @endsection

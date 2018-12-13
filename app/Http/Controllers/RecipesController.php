@@ -8,6 +8,16 @@ use App\Recipe;
 class RecipesController extends Controller
 {
     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'show']]);
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -47,6 +57,7 @@ class RecipesController extends Controller
         $recipe = new Recipe;
         $recipe->title = $request->title;
         $recipe->body = $request->body;
+        $recipe->user_id = auth()->user()->id;
         $recipe->save();
 
         return redirect('/recipes')->with('success', 'Новый рецепт успешно добавлен');
@@ -78,9 +89,15 @@ class RecipesController extends Controller
     {
         //
         $recipe = Recipe::find($id);
+
         if (!$recipe) {
             return redirect('/recipes');
         }
+
+        if (auth()->user()->id !== $recipe->user_id) {
+            return redirect('/recipes')->with('error', 'Неавторизованный запрос');
+        }
+
         return view('recipes.edit')->with('recipe', $recipe);
     }
 

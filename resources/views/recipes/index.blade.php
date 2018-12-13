@@ -12,7 +12,7 @@
                         @foreach($recipes as $recipe)
                             <div class="well">
                                 <h3><a href="/recipes/{{$recipe->id}}">{{$recipe->title}}</a></h3>
-                                <small>Дата создания {{$recipe->created_at}}</small>
+                                <small>Создан {{$recipe->created_at}} пользователем {{$recipe->user->name}}</small>
                             </div>
                         @endforeach
                         {{$recipes->links()}}
