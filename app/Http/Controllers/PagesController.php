@@ -11,4 +11,16 @@ class PagesController extends Controller
     {
         return view('welcome');
     }
+
+    //
+    public function advice()
+    {
+        return view('advice');
+    }
+
+    //
+    public function unhealthy()
+    {
+        return view('unhealthy');
+    }
 }

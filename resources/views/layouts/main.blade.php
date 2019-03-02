@@ -70,7 +70,7 @@
     </header>
 
     <main role="main">
-    @include('inc.banner')
+    @yield('banner')
     @include('inc.messages')
     @yield('content')
     </main>

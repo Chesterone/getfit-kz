@@ -15,10 +15,12 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'RecipesController@index');
+Route::get('/', 'PagesController@index');
 
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('/advice', 'PagesController@advice');
+Route::get('/unhealthy', 'PagesController@unheathy');
 
 Route::resource('recipes', 'RecipesController');
