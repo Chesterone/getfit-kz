@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">{{$recipe->title}}</div>
                 <div class="card-body">
-                    <a class="btn btn-primary" href="/recipes">Назад</a>
+                    <button type="button" class="btn btn-primary" onclick="history.back()">Назад</a>
                 </div>
     
                 <div class="card-body">

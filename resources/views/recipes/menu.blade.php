@@ -30,7 +30,7 @@
                     <li>{{$recipe->title}}</li>
                     <li><small class="text-muted">{{substr(strip_tags($recipe->body), 0, 100)}}</small></li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Подробнее</button>
+                    <a href="/recipes/{{$recipe->id}}" class="btn btn-lg btn-block btn-outline-primary">Подробнее</a>
                 </div>
             </div>
         @endforeach
