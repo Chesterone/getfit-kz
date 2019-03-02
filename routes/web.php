@@ -21,6 +21,6 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/advice', 'PagesController@advice');
-Route::get('/unhealthy', 'PagesController@unheathy');
+Route::get('/unhealthy', 'PagesController@unhealthy');
 
 Route::resource('recipes', 'RecipesController');
