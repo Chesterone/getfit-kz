@@ -24,3 +24,5 @@ Route::get('/advice', 'PagesController@advice');
 Route::get('/unhealthy', 'PagesController@unhealthy');
 
 Route::resource('recipes', 'RecipesController');
+
+Route::get('menu/{menu_id}', 'RecipesController@showMenu');

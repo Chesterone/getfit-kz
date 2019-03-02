@@ -146,4 +146,12 @@ class RecipesController extends Controller
         $recipe->delete();
         return redirect('/recipes')->with('success', 'Рецепт успешно удален'); 
     }
+
+    public function showMenu($menu_id)
+    {
+        //
+        $weekdays = array("Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье");
+        $recipes = Recipe::where('menu_id', $menu_id)->limit(7)->get();
+        return view('recipes.menu')->with(['recipes' => $recipes, 'menu_id' => $menu_id, 'weekdays' => $weekdays]);
+    }
 }
