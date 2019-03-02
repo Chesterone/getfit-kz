@@ -92,5 +92,9 @@
     <script src="../../../../js/popper.min.js"></script>
     <script src="../../../../js/bootstrap.min.js"></script>
     <script src="../../../../js/holder.min.js"></script>
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
   </body>
 </html>

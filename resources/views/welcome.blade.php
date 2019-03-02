@@ -25,7 +25,7 @@
             <p class="card-text">Меню дня похудения. Сбалансированное меню, содержащая все необходимые организму вещества, но при этом, позволяющее сбросить лишние килограммы. Наше меню позволит сделать это вкусно и с удовольствием.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <a class="btn btn-primary" href="{{url('recepies/1')}}" role="button">Подробнее</a>
+                <a class="btn btn-success" href="{{url('recepies/menu/1')}}" role="button">Диет меню</a>
               </div>
               <small class="text-muted">1500 ккал/день</small>
             </div>
@@ -39,7 +39,7 @@
             <p class="card-text">Спортивное меню, специально подобранное для набора мышечной массы и восстановления организма после тренировок. Элементы, входящие в состав меню, дадут строительный материал для вашего роста и обеспечат организм необходимыми микроэлементами для здорового сна.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <a class="btn btn-primary" href="{{url('recepies/2')}}" role="button">Подробнее</a>
+                <a class="btn btn-danger" href="{{url('recepies/menu/2')}}" role="button">Спорт меню</a>
               </div>
               <small class="text-muted">3500 ккал/день</small>
             </div>
@@ -53,7 +53,7 @@
             <p class="card-text">Всем известно, в первый год жизни ребенок должен получать все необходимые питательные вещества через молоко матери. Меню для молодых мам специально составлено так, чтобы вы и ваш малыш чувствовали себя отлично.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <a class="btn btn-primary" href="{{url('recepies/3')}}" role="button">Подробнее</a>
+                <a class="btn btn-primary" href="{{url('recepies/menu/3')}}" role="button">Для мам</a>
               </div>
               <small class="text-muted">2200 ккал/день</small>
             </div>

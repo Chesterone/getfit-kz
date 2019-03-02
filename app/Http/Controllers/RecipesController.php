@@ -58,6 +58,8 @@ class RecipesController extends Controller
         $recipe->title = $request->title;
         $recipe->body = $request->body;
         $recipe->user_id = auth()->user()->id;
+        $recipe->menu_id = $request->menu_id;
+        $recipe->image_url = $request->image_url;
         $recipe->save();
 
         return redirect('/recipes')->with('success', 'Новый рецепт успешно добавлен');
@@ -122,6 +124,8 @@ class RecipesController extends Controller
         }
         $recipe->title = $request->title;
         $recipe->body = $request->body;
+        $recipe->menu_id = $request->menu_id;
+        $recipe->image_url = $request->image_url;
         $recipe->save();
 
         return redirect('/recipes')->with('success', 'Рецепт успешно обновлен');
