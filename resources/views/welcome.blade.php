@@ -20,7 +20,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" src="{{ asset('img/menu1.jpg') }}" alt="Меню для похудения">
+          <img class="card-img-top" src="https://i.ibb.co/fFtWzvh/menu1.jpg" alt="Меню для похудения">
           <div class="card-body">
             <p class="card-text">Меню дня похудения. Сбалансированное меню, содержащая все необходимые организму вещества, но при этом, позволяющее сбросить лишние килограммы. Наше меню позволит сделать это вкусно и с удовольствием.</p>
             <div class="d-flex justify-content-between align-items-center">
@@ -34,7 +34,7 @@
       </div>
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" src="{{ asset('img/menu2.jpg') }}" alt="Спортивное меню">
+          <img class="card-img-top" src="https://i.ibb.co/DCwtvm5/menu2.jpg" alt="Спортивное меню">
           <div class="card-body">
             <p class="card-text">Спортивное меню, специально подобранное для набора мышечной массы и восстановления организма после тренировок. Элементы, входящие в состав меню, дадут строительный материал для вашего роста и обеспечат организм необходимыми микроэлементами для здорового сна.</p>
             <div class="d-flex justify-content-between align-items-center">
@@ -48,7 +48,7 @@
       </div>
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" src="{{ asset('img/menu3.jpg') }}" alt="Меню для молодых мам">
+          <img class="card-img-top" src="https://i.ibb.co/qWMLtxz/menu3.jpg" alt="Меню для молодых мам">
           <div class="card-body">
             <p class="card-text">Всем известно, в первый год жизни ребенок должен получать все необходимые питательные вещества через молоко матери. Меню для молодых мам специально составлено так, чтобы вы и ваш малыш чувствовали себя отлично.</p>
             <div class="d-flex justify-content-between align-items-center">
