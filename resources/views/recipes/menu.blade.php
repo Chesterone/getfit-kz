@@ -18,7 +18,7 @@
   <div class="card-deck mb-4 text-center">
     @if(count($recipes) > 0)
         @foreach($recipes as $key=>$recipe)
-            <div class="card mb-4 shadow-sm">
+            <div class="card shadow-sm" style="width: 18rem;">
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal">{{$weekdays[$key]}}</h4>
                 </div>
