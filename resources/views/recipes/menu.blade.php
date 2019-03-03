@@ -15,10 +15,10 @@
 </div>
 
 <div class="container">
-  <div class="card-deck mb-4 text-center">
+  <div class="card-deck mb-3 text-center">
     @if(count($recipes) > 0)
         @foreach($recipes as $key=>$recipe)
-            <div class="card shadow-sm" style="width: 18rem;">
+            <div class="card shadow-sm mb-3">
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal">{{$weekdays[$key]}}</h4>
                 </div>
