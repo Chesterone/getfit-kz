@@ -15,7 +15,7 @@
 </div>
 
 <div class="container">
-  <div class="card-deck mb-3 text-center">
+  <div class="card-deck mb-4 text-center">
     @if(count($recipes) > 0)
         @foreach($recipes as $key=>$recipe)
             <div class="card mb-4 shadow-sm">
@@ -28,7 +28,7 @@
                     </h1>
                     <ul class="list-unstyled mt-3 mb-4">
                     <li>{{$recipe->title}}</li>
-                    <li><small class="text-muted">{{substr(strip_tags($recipe->body), 0, 100)}}</small></li>
+                    <li><small class="text-muted">{{substr(strip_tags($recipe->body), 0, 300)}}</small></li>
                     </ul>
                     <a href="/recipes/{{$recipe->id}}" class="btn btn-lg btn-block btn-outline-primary">Подробнее</a>
                 </div>
