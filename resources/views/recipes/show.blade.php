@@ -11,9 +11,12 @@
                 </div>
     
                 <div class="card-body">
+                    <h1 class="card-title pricing-card-title">
+                        <img class="card-img-top" src="{{$recipe->image_url}}" alt="{{$recipe->title}}">
+                    </h1>
+                    <p>
                     {!!$recipe->body!!}
-                </div>
-                <div class="card-body">
+                    </p>
                     <small>Создан {{$recipe->created_at}} пользователем {{$recipe->user->name}}</small>
                 </div>
         </div>

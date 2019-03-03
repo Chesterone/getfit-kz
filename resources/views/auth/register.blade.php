@@ -62,24 +62,24 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Ваша цель</label>
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Ваша цель и меню</label>
                             <div class="col-md-6">
                                 <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                                 <label class="form-check-label" for="exampleRadios1">
-                                    Набрать вес
+                                    Набрать вес (Спортивное меню)
                                 </label>
                                 </div>
                                 <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
                                 <label class="form-check-label" for="exampleRadios2">
-                                    Сбросить вес
+                                    Сбросить вес (Диетическое меню)
                                 </label>
                                 </div>
                                 <div class="form-check disabled">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
                                 <label class="form-check-label" for="exampleRadios3">
-                                    Правильное питание
+                                    Правильное питание (Для молодых мам)
                                 </label>
                                 </div>
                             </div>
