@@ -65,19 +65,19 @@
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Ваша цель и меню</label>
                             <div class="col-md-6">
                                 <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <input class="form-check-input" type="radio" name="menu_id" id="menu_id1" value="1" checked>
                                 <label class="form-check-label" for="exampleRadios1">
-                                    Набрать вес (Спортивное меню)
-                                </label>
-                                </div>
-                                <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                <label class="form-check-label" for="exampleRadios2">
                                     Сбросить вес (Диетическое меню)
                                 </label>
                                 </div>
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="menu_id" id="menu_id2" value="2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Набрать вес (Спортивное меню)
+                                </label>
+                                </div>
                                 <div class="form-check disabled">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <input class="form-check-input" type="radio" name="menu_id" id="menu_id3" value="3">
                                 <label class="form-check-label" for="exampleRadios3">
                                     Правильное питание (Для молодых мам)
                                 </label>

@@ -40,7 +40,7 @@
                     <li><a href="{{ route('register') }}" class="text-white">Регистрация</a></li>
                   @endif
                 @else
-                  <li><a href="{{ route('dashboard') }}" class="text-white">Мои рецепты</a></li>
+                  <li><a href="{{ route('dashboard') }}" class="text-white">Мое меню на неделю</a></li>
                   <li><a href="{{ route('recipes.create') }}" class="text-white">Добавить рецепт</li>
                   <li><a href="{{ route('logout') }}"
                     onclick="event.preventDefault();
